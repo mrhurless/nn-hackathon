@@ -31,21 +31,10 @@ if st.button('Check for Hot Dog'):
     elif upload is not None:
         # execute uploaded image code here
         image_file = upload
-
-         # Convert single image to a batch.
-        # input_arr = img_to_array(image).reshape((None, img_size, img_size, 3))
-        # predictions = model.predict(input_arr)
         
     elif cam is not None:
         # execute cam code here
-        #st.write("You have taken a picture")
-
         image_file = cam
-        # bytes_data = cam.getvalue()
-        # img_tensor = tf.io.decode_image(bytes_data, channels=3)
-        # img = Image.open(cam)
-        # img_array = ds(img)
-        # img_array = resize(img_array)
 
     if image_file:
         st.image(image_file)
