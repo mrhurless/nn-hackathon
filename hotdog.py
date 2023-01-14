@@ -5,8 +5,10 @@ from tensorflow.keras.layers import Resizing
 from tensorflow.io import decode_image
 from tensorflow.keras.utils import img_to_array, load_img
 
-model = load_model('./')
-img_size = 128
+# model = load_model('./')
+model = load_model('hotdog_modelmk3.h5')
+# img_size = 128
+img_size = 256
 image_file = None
 
 resize = Sequential([Resizing(img_size, img_size)])
